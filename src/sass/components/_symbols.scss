@@ -4,13 +4,12 @@
   grid-template-rows: repeat(6, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  width: 20%;
+  margin-left: 10px;
 
   .symbol {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: orange;
-    margin-left: 10px;
   }
 }

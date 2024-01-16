@@ -1,9 +1,5 @@
-export default function number({ setResulat, resultat }) {
-  const numbers = [",", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9].reverse();
-
-  const handleClick = (e) => {
-    setResulat(resultat.concat(e.target.dataset.number));
-  };
+export default function number({ setResulat, handleClick }) {
+  const numbers = [".", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9].reverse();
 
   const clear = () => {
     setResulat("");

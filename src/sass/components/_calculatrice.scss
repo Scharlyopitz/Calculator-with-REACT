@@ -20,22 +20,24 @@
     text-align: end;
     padding: 10px;
     color: $white;
+    font-family: "Nunito", sans-serif;
   }
 
   .pavee_numerique {
     height: 100%;
     display: flex;
     flex-direction: row;
+    margin: 20px;
 
     .numbers {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(4, 1fr);
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
       text-align: center;
       height: 100%;
-      width: 90%;
+      width: 80%;
 
       .number {
         display: flex;
@@ -49,16 +51,22 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(6, 1fr);
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
-      width: 10%;
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+      width: 20%;
 
       .symbol {
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: orange;
+        margin-left: 10px;
       }
+    }
+
+    .number,
+    .symbol {
+      border-radius: 50%;
     }
   }
 }

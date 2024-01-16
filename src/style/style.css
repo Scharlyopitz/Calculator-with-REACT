@@ -36,13 +36,19 @@ body {
   color: #ffffff;
   font-family: "Nunito", sans-serif;
 }
-.calculatrice .pavee_numerique {
+
+.pavee_numerique {
   height: 100%;
   display: flex;
   flex-direction: row;
   margin: 20px;
 }
-.calculatrice .pavee_numerique .numbers {
+.pavee_numerique .number,
+.pavee_numerique .symbol {
+  border-radius: 50%;
+}
+
+.numbers {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -52,13 +58,14 @@ body {
   height: 100%;
   width: 80%;
 }
-.calculatrice .pavee_numerique .numbers .number {
+.numbers .number {
   display: flex;
   align-items: center;
   justify-content: center;
   background: blue;
 }
-.calculatrice .pavee_numerique .calcul {
+
+.calcul {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
@@ -66,14 +73,10 @@ body {
   grid-row-gap: 10px;
   width: 20%;
 }
-.calculatrice .pavee_numerique .calcul .symbol {
+.calcul .symbol {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: orange;
   margin-left: 10px;
-}
-.calculatrice .pavee_numerique .number,
-.calculatrice .pavee_numerique .symbol {
-  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,11 @@
+.pavee_numerique {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+
+  .number,
+  .symbol {
+    border-radius: 50%;
+  }
+}

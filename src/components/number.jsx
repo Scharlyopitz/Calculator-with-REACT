@@ -26,7 +26,7 @@ export default function number({ setResultat, resultat, handleClick }) {
       <div onClick={clear} className="number">
         C
       </div>
-      <div onClick={clearLastNumber} className="symbol">
+      <div onClick={clearLastNumber} className="symbol clearNumber">
         ←
       </div>
     </div>

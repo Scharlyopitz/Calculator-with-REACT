@@ -73,7 +73,8 @@ body {
   grid-row-gap: 10px;
   margin-left: 10px;
 }
-.calcul .symbol {
+
+.symbol {
   display: flex;
   justify-content: center;
   align-items: center;

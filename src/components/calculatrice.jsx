@@ -3,7 +3,7 @@ import Buttons from "./buttons";
 import { useState } from "react";
 
 export default function Calculatrice() {
-  const [resultat, setResulat] = useState("");
+  const [resultat, setResultat] = useState("");
 
   return (
     <div className="calculatrice">
@@ -13,7 +13,7 @@ export default function Calculatrice() {
         className="calculatrice_resultat"
         value={resultat}
       />
-      <Buttons setResulat={setResulat} resultat={resultat} />
+      <Buttons setResultat={setResultat} resultat={resultat} />
     </div>
   );
 }

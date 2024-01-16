@@ -1,21 +1,21 @@
 import Number from "./number";
 import Symbol from "./symbol";
 
-export default function Buttons({ setResulat, resultat }) {
+export default function Buttons({ setResultat, resultat }) {
   const handleClick = (e) => {
-    setResulat(resultat.concat(e.target.dataset.number));
+    setResultat(resultat.concat(e.target.dataset.number));
   };
   return (
     <>
       <div className="pavee_numerique">
         <Number
           resultat={resultat}
-          setResulat={setResulat}
+          setResultat={setResultat}
           handleClick={handleClick}
         />
         <Symbol
           resultat={resultat}
-          setResulat={setResulat}
+          setResultat={setResultat}
           handleClick={handleClick}
         />
       </div>

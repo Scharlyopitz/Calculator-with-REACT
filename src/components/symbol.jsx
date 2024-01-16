@@ -1,13 +1,13 @@
-export default function symbol({ setResulat, resultat, handleClick }) {
+export default function symbol({ setResultat, resultat, handleClick }) {
   const clearLastNumber = () => {
-    setResulat(resultat.slice(0, resultat.length - 1));
+    setResultat(resultat.slice(0, resultat.length - 1));
   };
 
   const calculResult = () => {
     try {
-      setResulat(eval(resultat).toString());
+      setResultat(eval(resultat).toString());
     } catch (err) {
-      setResulat("Erreur!");
+      setResultat("Erreur!");
     }
   };
 

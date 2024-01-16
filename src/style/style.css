@@ -37,7 +37,6 @@ body {
 }
 
 .pavee_numerique {
-  height: 100%;
   display: flex;
   flex-direction: row;
   margin: 20px 0;
@@ -56,7 +55,6 @@ body {
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   text-align: center;
-  height: 100%;
 }
 .numbers .number {
   display: flex;
@@ -71,7 +69,7 @@ body {
 .calcul {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   margin-left: 10px;

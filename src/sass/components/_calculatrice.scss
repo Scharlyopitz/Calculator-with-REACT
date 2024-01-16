@@ -14,11 +14,12 @@
   &_resultat {
     width: 100%;
     height: 70px;
-    background-color: $grey;
+    background-color: $black;
     margin: 0 auto;
     border: none;
     text-align: end;
     padding: 10px;
+    color: $white;
   }
 
   .pavee_numerique {

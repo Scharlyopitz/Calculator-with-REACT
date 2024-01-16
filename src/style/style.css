@@ -5,7 +5,8 @@
 }
 
 body {
-  background: #ff0000;
+  background: #000000;
+  color: #ffffff;
 }
 
 .calculatrice {
@@ -24,11 +25,12 @@ body {
 .calculatrice_resultat {
   width: 100%;
   height: 70px;
-  background-color: #bababa;
+  background-color: #000000;
   margin: 0 auto;
   border: none;
   text-align: end;
   padding: 10px;
+  color: #ffffff;
 }
 .calculatrice .pavee_numerique {
   height: 100%;

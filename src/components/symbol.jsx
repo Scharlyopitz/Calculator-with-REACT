@@ -1,13 +1,9 @@
 export default function symbol({ setResultat, resultat, handleClick }) {
-  const clearLastNumber = () => {
-    setResultat(resultat.slice(0, resultat.length - 1));
-  };
-
   const calculResult = () => {
     try {
       setResultat(eval(resultat).toString());
     } catch (err) {
-      setResultat("Erreur!");
+      setResultat("ERREUR!");
     }
   };
 
@@ -27,9 +23,6 @@ export default function symbol({ setResultat, resultat, handleClick }) {
       </div>
       <div onClick={calculResult} className="symbol">
         =
-      </div>
-      <div onClick={clearLastNumber} className="symbol">
-        ←
       </div>
     </div>
   );

@@ -22,10 +22,9 @@ body {
   display: flex;
   flex-direction: column;
   padding: 30px;
+  background-color: #000000;
 }
 .calculatrice_resultat {
-  width: 100%;
-  height: 150px;
   background-color: #000000;
   margin: 0 auto;
   border: none;
@@ -34,6 +33,7 @@ body {
   color: #ffffff;
   font-family: "Nunito", sans-serif;
   font-size: 55px;
+  width: 390px;
 }
 
 .pavee_numerique {
@@ -46,6 +46,7 @@ body {
   border-radius: 50%;
   width: 90px;
   height: 90px;
+  cursor: pointer;
 }
 
 .numbers {
@@ -60,10 +61,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: blue;
+  background: #333333;
 }
 .numbers .clearNumber {
-  background: red;
+  border-radius: 50px;
+  grid-area: 5/1/6/4;
+  width: auto;
 }
 
 .calcul {
@@ -79,5 +82,5 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: orange;
+  background-color: #fe9504;
 }/*# sourceMappingURL=style.css.map */

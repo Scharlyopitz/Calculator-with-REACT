@@ -10,10 +10,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: blue;
+    background: $grey;
   }
 
   .clearNumber {
-    background: red;
+    border-radius: 50px;
+    grid-area: 5 / 1 / 6 / 4;
+    width: auto;
   }
 }

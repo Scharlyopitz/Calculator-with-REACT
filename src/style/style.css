@@ -42,7 +42,6 @@ body {
 }
 .pavee_numerique .number,
 .pavee_numerique .symbol {
-  font-size: 40px;
   border-radius: 50%;
   width: 90px;
   height: 90px;
@@ -58,6 +57,7 @@ body {
   text-align: center;
 }
 .numbers .number {
+  font-size: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,6 +86,8 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #fe9504;
+  font-weight: 500;
+  font-size: 50px;
 }
 .symbol:hover {
   background-color: #ffaa32;

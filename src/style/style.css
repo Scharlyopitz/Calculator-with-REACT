@@ -63,6 +63,9 @@ body {
   justify-content: center;
   background: #333333;
 }
+.numbers .number:hover {
+  background-color: #414141;
+}
 .numbers .clearNumber {
   border-radius: 50px;
   grid-area: 5/1/6/4;
@@ -83,4 +86,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #fe9504;
+}
+.symbol:hover {
+  background-color: #ffaa32;
 }/*# sourceMappingURL=style.css.map */

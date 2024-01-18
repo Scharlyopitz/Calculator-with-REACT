@@ -11,6 +11,10 @@
     align-items: center;
     justify-content: center;
     background: $grey;
+
+    &:hover {
+      background-color: $light-grey;
+    }
   }
 
   .clearNumber {

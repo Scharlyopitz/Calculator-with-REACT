@@ -1,9 +1,17 @@
-export default function symbol({ setResultat, resultat, handleClick }) {
+export default function symbol({
+  setResultat,
+  resultat,
+  handleClick,
+  setInvisibleResultat,
+  invisibleResultat,
+}) {
   const calculResult = () => {
     try {
-      setResultat(eval(resultat).toString());
+      setResultat(eval(invisibleResultat).toString());
+      setInvisibleResultat(eval(invisibleResultat).toString());
     } catch (err) {
       setResultat("ERREUR!");
+      setInvisibleResultat("ERREUR!");
     }
   };
 

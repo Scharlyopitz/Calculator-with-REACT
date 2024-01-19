@@ -1,12 +1,16 @@
-export default function number({ setResultat, resultat, handleClick }) {
+export default function number({
+  setResultat,
+  resultat,
+  handleClick,
+  clear,
+  invisibleResultat,
+  setInvisibleResultat,
+}) {
   const numbers = [".", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9].reverse();
-
-  const clear = () => {
-    setResultat("");
-  };
 
   const clearLastNumber = () => {
     setResultat(resultat.slice(0, resultat.length - 1));
+    setInvisibleResultat(invisibleResultat.slice(0, resultat.length - 1));
   };
 
   return (

@@ -5,8 +5,6 @@ import { useState } from "react";
 export default function Calculatrice() {
   const [resultat, setResultat] = useState("");
 
-  const [invisibleResultat, setInvisibleResultat] = useState("");
-
   return (
     <div className="calculatrice">
       <input
@@ -15,12 +13,7 @@ export default function Calculatrice() {
         className="calculatrice_resultat"
         value={resultat}
       />
-      <Buttons
-        setResultat={setResultat}
-        resultat={resultat}
-        setInvisibleResultat={setInvisibleResultat}
-        invisibleResultat={invisibleResultat}
-      />
+      <Buttons setResultat={setResultat} resultat={resultat} />
     </div>
   );
 }

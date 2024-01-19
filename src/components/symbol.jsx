@@ -1,19 +1,4 @@
-export default function symbol({
-  setResultat,
-  handleClick,
-  setInvisibleResultat,
-  invisibleResultat,
-}) {
-  const calculResult = () => {
-    try {
-      setResultat(eval(invisibleResultat).toString());
-      setInvisibleResultat(eval(invisibleResultat).toString());
-    } catch (err) {
-      setResultat("ERREUR!");
-      setInvisibleResultat("ERREUR!");
-    }
-  };
-
+export default function symbol({ handleClick, calculResult }) {
   return (
     <div className="calcul">
       <div onClick={handleClick} data-number="/" className="symbol">

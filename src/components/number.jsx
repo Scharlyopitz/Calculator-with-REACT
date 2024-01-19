@@ -1,6 +1,7 @@
 export default function number({
   setResultat,
   resultat,
+  errorMessage,
   handleClick,
   clear,
   invisibleResultat,
@@ -11,6 +12,9 @@ export default function number({
   const clearLastNumber = () => {
     setResultat(resultat.slice(0, resultat.length - 1));
     setInvisibleResultat(invisibleResultat.slice(0, resultat.length - 1));
+    {
+      resultat === errorMessage && clear();
+    }
   };
 
   return (

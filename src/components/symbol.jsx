@@ -1,6 +1,5 @@
 export default function symbol({
   setResultat,
-  resultat,
   handleClick,
   setInvisibleResultat,
   invisibleResultat,

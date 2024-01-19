@@ -6,7 +6,6 @@ export default function Calculatrice() {
   const [resultat, setResultat] = useState("");
 
   const [invisibleResultat, setInvisibleResultat] = useState("");
-  console.log(invisibleResultat);
 
   return (
     <div className="calculatrice">

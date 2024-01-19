@@ -10,18 +10,16 @@ export default function Buttons({
   const handleClick = (e) => {
     setResultat(resultat.concat(e.target.innerHTML));
     setInvisibleResultat(invisibleResultat.concat(e.target.dataset.number));
+
+    {
+      resultat === "ERREUR!" && clear();
+    }
   };
 
   const clear = () => {
     setResultat("");
     setInvisibleResultat("");
   };
-
-  if (resultat === "ERREUR!") {
-    setTimeout(function () {
-      clear();
-    }, 2000);
-  }
 
   return (
     <>

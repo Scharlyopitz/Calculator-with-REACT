@@ -39,11 +39,11 @@ export default function Buttons({ setResultat, resultat }) {
         <Number
           resultat={resultat}
           setResultat={setResultat}
-          errorMessage={errorMessage}
           handleClick={handleClick}
           setInvisibleResultat={setInvisibleResultat}
           invisibleResultat={invisibleResultat}
           deleteResult={deleteResult}
+          errorMessage={errorMessage}
         />
         <Symbol
           resultat={resultat}
@@ -51,8 +51,8 @@ export default function Buttons({ setResultat, resultat }) {
           handleClick={handleClick}
           setInvisibleResultat={setInvisibleResultat}
           invisibleResultat={invisibleResultat}
-          calculResult={calculResult}
           setDeleteResult={setDeleteResult}
+          calculResult={calculResult}
         />
       </div>
     </>

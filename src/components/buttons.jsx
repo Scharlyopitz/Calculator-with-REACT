@@ -23,11 +23,6 @@ export default function Buttons({ setResultat, resultat }) {
     deleteResult && setInvisibleResultat(e.target.dataset.number);
   };
 
-  const clear = () => {
-    setResultat("");
-    setInvisibleResultat("");
-  };
-
   const calculResult = () => {
     try {
       setResultat(eval(invisibleResultat).toString());
@@ -42,13 +37,13 @@ export default function Buttons({ setResultat, resultat }) {
     <>
       <div className="pavee_numerique">
         <Number
-          clear={clear}
           resultat={resultat}
           setResultat={setResultat}
           errorMessage={errorMessage}
           handleClick={handleClick}
           setInvisibleResultat={setInvisibleResultat}
           invisibleResultat={invisibleResultat}
+          deleteResult={deleteResult}
         />
         <Symbol
           resultat={resultat}

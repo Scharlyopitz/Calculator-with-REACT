@@ -3,18 +3,23 @@ export default function number({
   resultat,
   errorMessage,
   handleClick,
-  clear,
   invisibleResultat,
   setInvisibleResultat,
+  deleteResult,
 }) {
   const numbers = [".", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9].reverse();
+
+  const clear = () => {
+    setResultat("");
+    setInvisibleResultat("");
+  };
 
   const clearLastNumber = () => {
     setResultat(resultat.slice(0, resultat.length - 1));
     setInvisibleResultat(invisibleResultat.slice(0, resultat.length - 1));
-    {
-      resultat === errorMessage && clear();
-    }
+
+    resultat === errorMessage && clear();
+    deleteResult && clear();
   };
 
   return (

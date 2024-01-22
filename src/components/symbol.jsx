@@ -1,4 +1,4 @@
-export default function symbol({ handleClick, calculResult }) {
+export default function symbol({ handleClick, calculResult, setDeleteResult }) {
   return (
     <div className="calcul">
       <div onClick={handleClick} data-number="/" className="symbol">
@@ -13,7 +13,13 @@ export default function symbol({ handleClick, calculResult }) {
       <div onClick={handleClick} data-number="+" className="symbol">
         +
       </div>
-      <div onClick={calculResult} className="symbol">
+      <div
+        onClick={() => {
+          calculResult();
+          setDeleteResult(true);
+        }}
+        className="symbol"
+      >
         =
       </div>
     </div>

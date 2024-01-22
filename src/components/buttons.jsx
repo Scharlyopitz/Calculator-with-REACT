@@ -6,15 +6,21 @@ import { useState } from "react";
 export default function Buttons({ setResultat, resultat }) {
   const [invisibleResultat, setInvisibleResultat] = useState("");
 
+  const [deleteResult, setDeleteResult] = useState(false);
+
   const errorMessage = "ERREUR!";
 
   const handleClick = (e) => {
+    setDeleteResult(false);
+
     setResultat(resultat.concat(e.target.innerHTML));
     setInvisibleResultat(invisibleResultat.concat(e.target.dataset.number));
 
-    {
-      resultat === errorMessage && clear();
-    }
+    resultat === errorMessage && setResultat(e.target.innerHTML);
+    resultat === errorMessage && setInvisibleResultat(e.target.dataset.number);
+
+    deleteResult && setResultat(e.target.innerHTML);
+    deleteResult && setInvisibleResultat(e.target.dataset.number);
   };
 
   const clear = () => {
@@ -51,6 +57,7 @@ export default function Buttons({ setResultat, resultat }) {
           setInvisibleResultat={setInvisibleResultat}
           invisibleResultat={invisibleResultat}
           calculResult={calculResult}
+          setDeleteResult={setDeleteResult}
         />
       </div>
     </>

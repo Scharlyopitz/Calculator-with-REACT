@@ -22,7 +22,7 @@ export default function number({
       {numbers.map((number, idx) => {
         return (
           <div
-            onClick={(e) => handleClick(e)}
+            onClick={handleClick}
             key={idx}
             className="number"
             data-number={number}
